@@ -17,6 +17,25 @@ def selection_sort( arr ):
 
     return arr
 
+####Brady's Solution Code for Selection Sort
+# def selection_sort(arr):
+#     for i in range(0, len(arr) - 1):
+#         print(arr)
+#         cur_index = i
+#         smallest_index = cur_index
+#         for j in range(cur_index, len(arr)):
+############# 
+#By using cur_index as the first parameter in range he eliminate the need for the "j >= smallest_index in my code above"
+#############
+#             if arr[j] < arr[smallest_index]:
+#                 smallest_index = j
+# ​
+#         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
+############
+#above is the elegent way to swap in python, can't believe I forgot this
+############
+#     return arr
+
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     for i in range(0, len(arr)-1):
@@ -31,6 +50,17 @@ def bubble_sort( arr ):
                 ##the nested loops allow the bubble to occur repeatedly until all swaps have been performed
                 
     return arr
+
+########################
+#Greg's Solution Code for Bubble Sort:
+# def bubble_sort(arr):
+#     n = len(arr)
+#     for i in range(n - 1):
+#         for j in range(n - 1 - i):
+#             if arr[j] > arr[j + 1]:
+#                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+#     return arr
+###########################
 
 
 # # STRETCH: implement the Count Sort function below
