@@ -66,4 +66,12 @@ def bubble_sort( arr ):
 # # STRETCH: implement the Count Sort function below
 # def count_sort( arr, maximum=-1 ):
 
+# 1. first create a list of length of the range of the numbers in the input array (smallest element = min, largest element = max of range)
+# 2. initiallly this should be a list of zeros
+# 3. iterate over your input array and for each element increase the amount in that place/index in the count array by one, for example if your input element has a value of 2, go to the index 2 in the count array count[2] and add 1 to zero, do this for all elements in input array
+#4. for each element in count array add the previous element to the next
+#5. create a new array the same length as input array
+#6. iterate over input array and for each element do as follows:
+# if input array element = 2, locate element in count array at index 2, suppose it is 4, insert the input array element(2) at the new array's index of count array element minus one (4 - 1 = 3), so at the new array index of 3
+
 #     return arr
